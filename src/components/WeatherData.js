@@ -19,10 +19,7 @@ const WeatherData = ({ zipcode }) => {
               <Text>{date}</Text>
             </Flex>
           </Flex>
-          {/* <Flex flexDir={'column'}> */}
             <Image alignSelf={'center'} w={105} h={105} rounded={100} ml={5} style={{background: 'rgb(255, 255, 255, 0.5'}} src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} />
-            {/* <Text>{weather.weather[0].main}</Text> */}
-          {/* </Flex> */}
         </Flex>
       ) : null}
       {weather.message ? <Text>{weather.message}</Text> : null}
