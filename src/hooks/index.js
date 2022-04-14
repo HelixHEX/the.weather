@@ -35,7 +35,7 @@ export const useWeather = zipcode => {
     const main = async () => {
       await axios
         .get(
-          `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&appid=4ce40c76ef718812604abab33f644a26&units=imperial`
+          `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&appid=${process.env.REACT_APP_WEATHERAPI_KEY}&units=imperial`
         )
         .then(res => {
           setWeather(res.data);
