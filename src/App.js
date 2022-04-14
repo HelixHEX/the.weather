@@ -31,7 +31,7 @@ function App() {
           <Image
             left={0}
             top={0}
-            pos="absolute"
+            pos="absolute"d
             zIndex={-1}
             src={require('./assets/images/main.jpg')}
             w="100%"
@@ -45,13 +45,14 @@ function App() {
         <Flex
           // style={{ background: 'rgb(0, 0, 0, 0.7)' }}
           right={0}
+          display={['none', 'none', 'flex', 'flex']}
           bg="gray.900"
           pos="absolute"
           w="30%"
           h="100%"
           // filter={'blur(2px)'}
         />
-        <Flex flexDir={'column'} w="30%" h="100%" right={0} pos="absolute">
+        <Flex display={['none', 'none', 'flex', 'flex']} flexDir={'column'} w="30%" h="100%" right={0} pos="absolute">
           <Flex h={85} pl={10} pr={10} w="100%" justifyContent="space-between">
             <Input
               value={zipCode}
